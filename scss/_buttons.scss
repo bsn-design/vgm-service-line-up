@@ -1,0 +1,53 @@
+// Buttons
+.btn-default {
+  width: auto;
+  display: inline-block;
+  margin: .5em; padding: 1em 1.5em;
+  text-decoration: none;
+  background-color: $btn-default;
+  @include background-image($btn-gradient);
+  color: $btn-text;
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+  box-shadow: $btn-shadow;
+  &:hover {
+    background-color: $btn-default-hover;
+    @include background-image($btn-gradient-hover);
+    color: $btn-text-hover;
+  }
+  &:before {
+    margin-right: .5em;
+  }
+}
+.btn-primary {
+  @extend .btn-default;
+  background-color: $btn-primary;
+  @include background-image($btn-primary-gradient);
+  color: $btn-primary-text;
+  &:hover {
+    background-color: $btn-primary-hover;
+    @include background-image($btn-primary-gradient-hover);
+    color: $btn-primary-text-hover;
+  }
+}
+.btn-subtle {
+  @extend .btn-default;
+  background-color: $btn-subtle;
+  @include background-image($btn-subtle-gradient);
+  &:hover {
+    background-color: $btn-subtle-hover;
+    @include background-image($btn-subtle-gradient-hover);
+  }
+}
+.icon {
+  width: 3.25em;
+  padding-left: .7em;
+  // Hide actual text
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  &:before {
+    text-indent: 0;
+    float: left;
+  }
+}

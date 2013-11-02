@@ -1,0 +1,22 @@
+// Colors
+.section-blocks { margin: 0 auto; }
+.color-block {
+  display: inline-block;
+  width: 7.5em; height: 7.5em;
+  margin: .25em;
+  padding: 1em .5em;
+  vertical-align: top;
+  text-align: center;
+  background-color: $bg-light;
+  color: $text-dark;
+  p { margin: 0; }
+}
+.color-bg-dark { background-color: $bg-dark; color: $text-light; }
+.color-bg-light { background-color: $bg-light; }
+.color-bg-lightest { background-color: $bg-lightest; border: 1px solid $bg-dark; }
+.color-text-dark { background-color: $text-dark; color: $text-light; }
+.color-text-light { background-color: $text-light; }
+.color-brand-primary { background-color: $brand-primary; }
+.color-brand-secondary { background-color: $brand-secondary; color: $text-light; }
+.color-brand-loud { background-color: $brand-loud; }
+.color-brand-accent { background-color: $brand-accent; }

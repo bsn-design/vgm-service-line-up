@@ -1,0 +1,34 @@
+navItems = {'icon-home':'Home', 'icon-products':'Products', 'icon-question':'FAQ', 'icon-contact':'Contact'};
+colorItems = ['bg-dark', 'bg-light', 'bg-lightest', 'text-dark', 'text-light', 'brand-primary', 'brand-secondary', 'brand-loud', 'brand-accent'];
+
+doctype 5
+html(lang='en')
+  head
+    title Service Line Up Style Guide
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700', type='text/css', rel='stylesheet')
+    link(href="/css/style.css", type='text/css', rel='stylesheet')
+    link(rel="icon", type="image/png", href="/img/bsn-design-favicon.png")    
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    script(src="/js/modernizr.min.js")
+  body
+    header.guide-header
+      h1 Service Line Up
+      a#toggle-all.toggle.btn-default.icon-down.icon(href="#") Toggle Sections
+      h2 Style Guide Option 3
+      .section-links
+        a.nav-link.text(href="#typography") Typography
+        a.nav-link.text(href="#colors") Colors
+        a.nav-link.text(href="#navigation") Navigation
+        a.nav-link.text(href="#buttons") Buttons
+        a.nav-link.text(href="#icons") Icons
+        a.nav-link.text(href="#forms") Forms
+        a.nav-link.text(href="#images") Images
+    section.guide-main
+      include _typography
+      include _colors
+      include _navigation
+      include _buttons
+      include _icons
+      include _forms
+      include _images
+    include _footer

@@ -1,0 +1,67 @@
+// Navigation
+nav {
+  padding-top: .25em;
+  background-color: $nav-bg;
+  background-image: $nav-bg-gradient;
+}
+nav > ul {
+  list-style-type: none;
+  margin: 0; padding: 0;
+  text-align: center;
+  & > li { 
+    display: inline-block;
+    margin: 0; padding: 0;
+  }
+}
+.nav-link {
+  display: inline-block;
+  width: 3em;
+  margin: .25em; padding: .5em 1em;
+  text-decoration: none;
+  font-family: $headline-font;
+  font-size: 1.25em;
+  background-color: $nav-color;
+  @include background-image($nav-gradient);
+  color: $nav-text;
+  box-shadow: $nav-shadow;
+  border: $nav-border;
+  border-radius: $nav-border-radius;
+  // Hide actual text
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  &:before {
+    text-indent: 0;
+    float: left;
+    margin-top: .3em;
+    font-size: 1em;
+  }
+  &:hover {
+    background-color: $nav-hover;
+    @include background-image($nav-gradient-hover);
+    color: $nav-text-hover;
+  }
+  .expanded &, &.text {
+    width: auto;
+    text-indent: 0;
+    &:before { 
+      margin-right: .5em;
+      float: none;
+    }
+  }
+  @media screen and (min-width: $mq-text-med) {
+    &:before { margin-top: .4em; }
+  }
+  @media screen and (min-width: $mq-text-large) {
+    &:before { margin-top: .5em; }
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    &.menu { display: none; }
+    width: auto;
+    text-indent: 0;
+    &:before { 
+      margin-right: .5em;
+      float: none;
+    }
+  }
+}

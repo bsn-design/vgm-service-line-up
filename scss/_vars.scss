@@ -1,0 +1,86 @@
+// Fonts
+$headline-font: "Open Sans Condensed", Arial, sans-serif;
+$text-font: "Open Sans", Arial, sans-serif;
+$icon-font: 'general-icons';
+
+// Media Queries
+$mq-text-small: 32em;
+$mq-text-med: 36em;
+$mq-text-large: 41em;
+$mq-nav-large: 60em;
+
+// Colors
+$brand-primary: #ccc;
+$brand-secondary: #333;
+$brand-loud: #d11919;
+$brand-accent: #2495C0;
+
+$bg-dark: $brand-secondary;
+$bg-light: $brand-primary;
+$bg-lightest: lighten($bg-light, 20%);
+$header-gradient: none;
+$bg-gradient: none;
+$section-gradient: none;
+$section-border-radius: 0;
+
+$text-dark: #000;
+$text-light: #ccc;
+$text-lightest: #fff;
+
+$link-text: $text-dark;
+$link-hover: $brand-accent;
+$image-border: $bg-light;
+$image-border-radius: 0;
+
+// Buttons
+$btn-border: none;
+$btn-border-radius: 0;
+$btn-shadow: none;
+
+$btn-text: $text-dark;
+$btn-text-hover: $text-dark;
+$btn-primary-text: #fff;
+$btn-primary-text-hover: $btn-primary-text;
+
+$btn-default: $brand-primary;
+$btn-default-hover: darken($btn-default, 20%);
+$btn-gradient: none;
+$btn-gradient-hover: none;
+
+$btn-primary: $brand-loud;
+$btn-primary-hover: lighten($btn-primary, 10%);
+$btn-primary-gradient: none;
+$btn-primary-gradient-hover: none;
+
+$btn-subtle: lighten($btn-default, 8%);
+$btn-subtle-hover: $btn-default;
+$btn-subtle-gradient: none;
+$btn-subtle-gradient-hover: none;
+
+$guide-title: $text-light;
+$guide-section-toggle: $btn-default;
+$guide-section-toggle-hover: darken($guide-section-toggle, 20%);
+$guide-section-toggle-text: $btn-text;
+$guide-section-toggle-text-hover: $btn-text-hover;
+
+// Navigation
+$nav-bg: $bg-dark;
+$nav-bg-gradient: none;
+$nav-color: lighten($nav-bg, 20%);
+$nav-hover: lighten($nav-color, 30%);
+$nav-gradient: none;
+$nav-gradient-hover: none;
+$nav-text: $text-light;
+$nav-text-hover: $text-dark;
+$nav-border: none;
+$nav-border-radius: 0;
+$nav-shadow: none;
+
+// Forms
+$input: #fff;
+$input-focus: $brand-primary;
+$input-checked-focus: darken($input-focus, 20%);
+$input-shadow: none;
+$input-border-color: $bg-light;
+$input-border: .25em solid $input-border-color;
+$input-border-radius: 0;

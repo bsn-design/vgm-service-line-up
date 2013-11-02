@@ -1,0 +1,25 @@
+// Base styles
+*, *:before, *:after { box-sizing: border-box; }
+
+:root {
+  background-color: $bg-light;
+  height: 100%;
+  color: $text-dark;
+  font-size: 100%;
+}
+
+body {
+  font-size: .9em;
+  margin: 0;
+  @media screen and (min-width: $mq-text-small) {
+    font-size: 1em;
+  }
+  @media screen and (min-width: $mq-text-med) {
+    font-size: 1.1em;
+  }
+  @media screen and (min-width: $mq-text-large) {
+    font-size: 1.2em;
+  }  
+}
+
+a { text-decoration: underline; }

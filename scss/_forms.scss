@@ -1,0 +1,89 @@
+// Forms
+.input, .textarea {
+  width: 100%;
+  max-width: 30em;
+  margin: .5em 0;
+  padding: .5em;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  background-color: $input;
+  box-shadow: $input-shadow;
+  &:focus {
+    background-color: $input-focus;
+    outline: none;
+  }
+}
+.label {
+  display: block;
+}
+.input-group {
+  margin: .5em 0;
+}
+.radio, .checkbox {
+  opacity: 0;
+  margin: 1em 0;
+  width: auto;
+  & + .label {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1.5em;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -.25em; left: -2.5em;
+      width: 2em; height: 2em;
+      background-color: $input;
+      border: $input-border;
+    }
+  }
+}
+// Custom radio button graphic
+.radio + .label:before {
+  border-radius: 50%;  
+}
+.radio:focus + .label,
+.checkbox:focus + .label {
+  &:before {
+    background-color: $input-focus;
+  }
+}
+.radio:checked:focus + .label,
+.checkbox:checked:focus + .label {
+  &:before {
+    background-color: $input-checked-focus;
+  }
+}
+// Make the radio button checked
+.radio:checked + .label {
+  &:before {
+    background-color: $input-focus;
+  }
+  // The actual dot
+  &:after {
+    content: '';
+    position: absolute;
+    top: .25em; left: -2em;
+    width: 1em; height: 1em;
+    background-color: $text-dark;
+    border-radius: 50%;
+  }
+}
+// Make the checkbox checked
+.checkbox:checked + .label {
+  &:before {
+    background-color: $input-focus;
+  }
+  &:after{
+    content: "\e60e";
+    position: absolute;
+    top: .25em; left: -2em;
+    font-size: 1em;
+    font-family: $icon-font;
+    color: $text-dark;
+  }
+}
+input[type="submit"] {
+  display: block;
+  margin-left: 0;
+}

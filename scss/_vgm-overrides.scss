@@ -1,0 +1,78 @@
+// ***** VGM var overrides *****
+// Colors
+$brand-primary: #ccc;
+$brand-secondary: #333;
+$brand-loud: #d11919;
+$brand-accent: #507D38;
+
+$bg-dark: $brand-secondary;
+$bg-light: $brand-primary;
+$bg-lightest: lighten($bg-light, 20%);
+$header-gradient: linear-gradient(hsla(0,0%,0%,.3), hsla(0,0%,0%,0));
+$bg-gradient: none;
+$section-gradient: none;
+$section-border-radius: .5em;
+
+$text-dark: #000;
+$text-light: #fff;
+$text-lightest: #fff;
+
+$link-text: $text-dark;
+$link-hover: $brand-accent;
+$image-border: $bg-light;
+$image-border-radius: .5em;
+
+// Buttons
+$btn-border: none;
+$btn-border-radius: .5em;
+$btn-shadow: none;
+
+$btn-text: $text-dark;
+$btn-text-hover: $text-light;
+$btn-primary-text: #fff;
+$btn-primary-text-hover: $btn-primary-text;
+
+$btn-default: $brand-primary;
+$btn-default-hover: darken($btn-default, 20%);
+$btn-gradient: linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.3));
+$btn-gradient-hover: linear-gradient(hsla(0,0%,0%,.3), hsla(0,0%,0%,0));
+
+$btn-primary: $brand-loud;
+$btn-primary-hover: lighten($btn-primary, 10%);
+$btn-primary-gradient: linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,0));
+$btn-primary-gradient-hover: linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,.2));
+
+$btn-subtle: lighten($btn-default, 8%);
+$btn-subtle-hover: darken($btn-default,10%);
+$btn-subtle-gradient: linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.15));
+$btn-subtle-gradient-hover: linear-gradient(hsla(0,0%,0%,.15), hsla(0,0%,0%,0));
+
+$guide-title: $text-light;
+$guide-section-toggle: lighten($bg-dark, 15%);
+$guide-section-toggle-hover: darken($guide-section-toggle, 10%);
+$guide-section-toggle-text: $btn-text;
+$guide-section-toggle-text-hover: $btn-text-hover;
+
+// Navigation
+$nav-bg: $bg-dark;
+$nav-bg-gradient: none;
+$nav-color: $brand-accent; //lighten($nav-bg, 30%);
+$nav-hover: darken($nav-color, 10%);
+$nav-gradient: linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,0));
+$nav-gradient-hover: linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,.2));
+$nav-text: $text-dark;
+$nav-text-hover: $text-light;
+$nav-border: none;
+$nav-border-radius: .5em;
+$nav-shadow: none;
+
+// Forms
+$input: #fff;
+$input-focus: $bg-light;
+$input-checked-focus: darken($input-focus, 20%);
+$input-shadow: none;
+$input-border-color: $bg-light;
+$input-border: .25em solid $input-border-color;
+$input-border-radius: .5em;
+
+// ***** End of overrides *****

@@ -1,0 +1,48 @@
+// Images
+.image-small {
+  position: relative;
+  display: inline-block;
+  margin: .25em 0;
+  padding: .5em;
+  width: 100%;
+  max-width: 10em;
+  background-color: $image-border;
+  border-radius: $image-border-radius;
+  // Rules that are not really need for actual images
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  &:after {
+    content: 'Small 1:1';
+    position: absolute;
+    top: .25em; left: .25em; bottom: .25em; right: .25em;
+    display: block;
+    padding: .5em;
+    font-size: 2em;
+    font-family: $headline-font;
+    text-align: center;
+    color: $image-border;
+    background-color: $bg-lightest;
+    border-radius: $image-border-radius/2;
+  }
+}
+.image-med {
+  @extend .image-small;
+  max-width: 20em;
+  &:before { padding-top: 75%; }
+  &:after { content: 'Medium 4:3'; }
+}
+.image-large {
+  @extend .image-small;
+  max-width: 40em;
+  &:before { padding-top: 56.25%; }
+  &:after { content: 'Large 16:9'; }
+}
+.image-full {
+  @extend .image-small;
+  max-width: none;
+  &:before { padding-top: 50%; }
+  &:after { content: 'Full 2:1'; }
+}

@@ -1,0 +1,14 @@
+section.guide-section#navigation
+  header.section-header  
+    h1.section-title Navigation
+    a.toggle.btn-default.icon-down.icon(href="#") Toggle Section
+    br
+    a.link.icon-up(href="#top") Back to Top
+  .section-main
+    nav
+      ul
+        li
+          a.nav-link.menu.icon-menu(href="#") Menu
+        each linkName, className in navItems
+          li
+            a(class="nav-link contact #{className}", href="#")= linkName

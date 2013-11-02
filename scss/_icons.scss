@@ -1,0 +1,10 @@
+// Icons
+.icon-block {
+  @extend .color-block;
+  .icon {
+    font-size: 1.5em;
+    &:before {
+      margin: .5em 0 -.5em .5em;
+    }
+  }
+}

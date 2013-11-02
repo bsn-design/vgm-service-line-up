@@ -1,0 +1,31 @@
+section.guide-section#forms
+  header.section-header  
+    h1.section-title Forms
+    a.toggle.btn-default.icon-down.icon(href="#") Toggle Section
+    br
+    a.link.icon-up(href="#top") Back to Top
+  .section-main
+    form
+      .input-group
+        label.label(for="name") Name
+        input.input(name="name", type="text", placeholder="Your name", id="name")
+      .input-group
+        label.label(for="phone") Phone Number
+        input.input(name="phone", type="tel", placeholder="Your number", id="phone")
+      .input-group
+        label.label(for="email") Email
+        input.input(name="email", type="email", placeholder="Your email", id="email")
+      .input-group
+        label.label(for="site") Website
+        input.input(name="site", type="url", placeholder="Your site", id="site")
+      .radio-group
+        input.radio(name="gender", type="radio", id="male")
+        label.label(for="male") Male
+      .radio-group
+        input.radio(name="gender", type="radio", id="female")
+        label.label(for="female") Female
+      .checkbox-group
+        input.checkbox(name="more", type="checkbox", id="more")
+        label.label(for="more") I want to learn more
+      textarea.textarea(name="message", placeholder="Message", rows="8")
+      input.btn-primary(name="submit", type="submit", value="Submit")
