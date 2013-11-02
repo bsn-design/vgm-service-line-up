@@ -12,3 +12,18 @@
 @import "icons";
 @import "forms";
 @import "images";
+
+.page-header {
+  background-color: $bg-dark;
+  padding: .5em;
+  @media screen and (min-width: $mq-text-med) {
+    padding: 1em;
+  }
+}
+.logo {
+  display: block;
+  margin: 0 0 .25em;
+  text-align: center;
+  font-size: 2.5em;
+  color: $text-light;
+}

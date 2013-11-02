@@ -1,0 +1,23 @@
+navItems = {'icon-home':'Home', 'icon-products':'Products', 'icon-question':'FAQ', 'icon-contact':'Contact', 'icon-user':'Log In'};
+ 
+doctype 5
+html(lang='en')
+  head
+    title Service Line Up
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700', type='text/css', rel='stylesheet')
+    link(href="/css/style.css", type='text/css', rel='stylesheet')
+    //- link(rel="icon", type="image/png", href="/img/bsn-design-favicon.png")    
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    script(src="/js/modernizr.min.js")
+  body
+    header.page-header
+      h1.logo Service Line Up
+      nav
+        ul
+          li
+            a.nav-link.menu.icon-menu(href="#") Menu
+          each linkName, className in navItems
+            li
+              a(class="nav-link contact #{className}", href="#")= linkName
+    section.guide-main
+    include _footer
