@@ -1,10 +1,10 @@
 @font-face {
-	font-family: 'general-icons';
-	src:url('/fonts/general-icons.eot');
-	src:url('/fonts/general-icons.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/general-icons.ttf') format('truetype'),
-		url('/fonts/general-icons.woff') format('woff'),
-		url('/fonts/general-icons.svg#general-icons') format('svg');
+	font-family: 'vgm-icons';
+	src:url('/fonts/vgm-icons.eot');
+	src:url('/fonts/vgm-icons.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/vgm-icons.ttf') format('truetype'),
+		url('/fonts/vgm-icons.woff') format('woff'),
+		url('/fonts/vgm-icons.svg#vgm-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,7 +20,7 @@
 [class*="icon-"] {
 	position: relative;
 	&:before {
-		font-family: 'general-icons';
+		font-family: 'vgm-icons';
 		speak: none;
 		font-style: normal;
 		font-weight: normal;
@@ -37,48 +37,67 @@
 	}
 }
 
-.icon-contact:before {
+.icon-home:before {
 	content: "\e600";
 }
-.icon-phone:before {
+.icon-products:before {
 	content: "\e601";
 }
-.icon-home:before {
+.icon-phone:before {
 	content: "\e602";
 }
-.icon-menu:before {
+.icon-contact:before {
 	content: "\e603";
 }
 .icon-user:before {
 	content: "\e604";
 }
-.icon-send:before {
+.icon-question:before {
 	content: "\e605";
 }
-.icon-up:before {
+.icon-info:before {
 	content: "\e606";
 }
-.icon-right:before {
+.icon-checkmark:before {
 	content: "\e607";
 }
-.icon-down:before {
+$icon-checkmark: "\e607";
+.icon-enter:before {
 	content: "\e608";
 }
-.icon-left:before {
+.icon-up:before {
 	content: "\e609";
 }
-.icon-about:before {
+.icon-right:before {
 	content: "\e60a";
 }
-.icon-blog:before {
+.icon-down:before {
 	content: "\e60b";
 }
-.icon-question:before {
+.icon-left:before {
 	content: "\e60c";
 }
-.icon-products:before {
+.icon-menu:before {
 	content: "\e60d";
 }
-.icon-checkmark:before {
+.icon-send:before {
 	content: "\e60e";
+}
+.icon-schedule:before {
+	content: "\e60f";
+}
+.icon-billing:before {
+	content: "\e610";
+}
+.icon-customers:before {
+	content: "\e611";
+}
+.icon-briefcase:before {
+	content: "\e612";
+}
+.icon-reports:before {
+	content: "\e613";
+}
+.icon-cart:before {
+	content: "\e614";
 }

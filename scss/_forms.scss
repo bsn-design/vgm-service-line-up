@@ -75,7 +75,7 @@
     background-color: $input-focus;
   }
   &:after{
-    content: "\e60e";
+    content: $icon-checkmark;
     position: absolute;
     top: .25em; left: -2em;
     font-size: 1em;
