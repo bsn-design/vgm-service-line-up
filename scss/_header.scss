@@ -1,0 +1,42 @@
+$logo-width: 7em;
+$logo-height: $logo-width * .8;
+$logo-position: -$logo-height / 2;
+$header-min-height: $logo-height;
+$nav-padding: $logo-width + .5em;
+
+.page-header {
+  padding: .5em;
+  background-color: $bg-dark;
+  @media screen and (min-width: $mq-text-med) {
+    padding: 1em;
+  }
+  .container {
+    position: relative;
+    min-height: $header-min-height;
+  }
+}
+.logo {
+  position: absolute;
+  top: 0; left: 0;
+  width: $logo-width;
+  height: 100%;
+  margin: 0em;
+  font-size: 1em;
+}
+.logo-link {
+  position: absolute;
+  top: 50%; left: 0;
+  margin-top: $logo-position;
+  width: 100%;
+  height: $logo-height;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  background: url(/img/logo_dark.png) no-repeat center center;
+  background-size: cover;
+}
+nav {
+  padding-left: $nav-padding;
+  text-align: right;
+}

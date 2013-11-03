@@ -13,18 +13,19 @@ html(lang='en')
     script(src="/js/modernizr.min.js")
   body
     header.guide-header
-      h1 Service Line Up
-      a#toggle-all.toggle.btn-default.icon-down.icon(href="#") Toggle Sections
-      h2 Style Guide Option 3
-      .section-links
-        a.nav-link.text(href="#typography") Typography
-        a.nav-link.text(href="#colors") Colors
-        a.nav-link.text(href="#navigation") Navigation
-        a.nav-link.text(href="#buttons") Buttons
-        a.nav-link.text(href="#icons") Icons
-        a.nav-link.text(href="#forms") Forms
-        a.nav-link.text(href="#images") Images
-    section.guide-main
+      .container
+        h1 Service Line Up
+        a#toggle-all.toggle.btn-default.icon-down.icon(href="#") Toggle Sections
+        h2 Style Guide Option 3
+        .section-links
+          a.nav-link.text(href="#typography") Typography
+          a.nav-link.text(href="#colors") Colors
+          a.nav-link.text(href="#navigation") Navigation
+          a.nav-link.text(href="#buttons") Buttons
+          a.nav-link.text(href="#icons") Icons
+          a.nav-link.text(href="#forms") Forms
+          a.nav-link.text(href="#images") Images
+    section.guide-main.container
       include _typography
       include _colors
       include _navigation

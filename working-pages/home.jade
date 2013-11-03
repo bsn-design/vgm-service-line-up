@@ -1,5 +1,3 @@
-navItems = {'icon-home':'Home', 'icon-products':'Products', 'icon-question':'FAQ', 'icon-contact':'Contact', 'icon-user':'Log In'};
- 
 doctype 5
 html(lang='en')
   head
@@ -11,13 +9,54 @@ html(lang='en')
     script(src="/js/modernizr.min.js")
   body
     header.page-header
-      h1.logo Service Line Up
-      nav
-        ul
-          li
-            a.nav-link.menu.icon-menu(href="#") Menu
-          each linkName, className in navItems
+      .container
+        h1.logo
+          a.logo-link(href="#") Service Line Up
+        nav
+          ul
             li
-              a(class="nav-link contact #{className}", href="#")= linkName
-    section.guide-main
+              a.nav-link.menu.icon-menu(href="#") Menu
+            li
+              a.nav-link.icon-products(href="#") Products
+            li
+              a.nav-link.icon-question(href="#") FAQ
+            li
+              a.nav-link.icon-contact(href="#") Contact
+            li
+              a.nav-link.icon-enter(href="#") Log In
+    section.guide-main.container
+      section.hero.guide-section.cf
+        .hero-image
+          .image
+        h2.hero-subtitle Take the pain out of managing your business
+        p.hero-text You need to spend your time where it matters most&mdash;growing your business
+        a.btn-primary.icon-right Learn more
+      section.guide-section
+        h2.tagline Let Service Line Up worry about the details:
+      section.guide-section.home-point
+        i.point-icon.icon-schedule 
+        h3.point-title Scheduling
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-point
+        i.point-icon.icon-billing 
+        h3.point-title Billing
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-point
+        i.point-icon.icon-customers 
+        h3.point-title Customers
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-point
+        i.point-icon.icon-briefcase 
+        h3.point-title Contractors
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-point
+        i.point-icon.icon-reports 
+        h3.point-title Reports
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-point
+        i.point-icon.icon-checkmark 
+        h3.point-title Simplicity
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      section.guide-section.home-cta
+        a.btn-primary.icon-cart Buy Now
     include _footer

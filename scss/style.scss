@@ -12,18 +12,96 @@
 @import "icons";
 @import "forms";
 @import "images";
+@import "header";
 
-.page-header {
-  background-color: $bg-dark;
-  padding: .5em;
+.hero-image {
+  position: relative;
+  width: 50%;
+  max-width: 15em;
+  overflow: hidden;
+  float: left;
+  margin: 0 1em .5em 0;
+  // Keeps it 1:1
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  .image {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(/img/woman-at-computer.jpg) no-repeat center center;
+    background-size: cover;
+  }
   @media screen and (min-width: $mq-text-med) {
-    padding: 1em;
+    width: 40%;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    width: 15em;
   }
 }
-.logo {
-  display: block;
-  margin: 0 0 .25em;
+.hero-text {
+  max-width: none;
+}
+.tagline {
+  margin: 0;
   text-align: center;
-  font-size: 2.5em;
-  color: $text-light;
+}
+.home-point {
+  @media screen and (min-width: $mq-text-small) {
+    float: left;
+    width: 50%;
+    width: calc(50% - .375em);
+    margin-top: 0;
+    &:nth-child(odd) {
+      margin-right: .75em;
+    }
+  }
+  @media screen and (min-width: $mq-text-med) {
+    width: calc(50% - .5em);
+    &:nth-child(odd) {
+      margin-right: 1em;
+    }
+  }
+  @media screen and (min-width: $mq-text-large) {
+    width: calc(50% - .625em);
+    &:nth-child(odd) {
+      margin-right: 1.25em;
+    }
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    width: 33%;
+    width: calc(32.9% - .625em);
+    &:nth-child(even), &:nth-child(odd) {
+      margin-right: 1.25em;
+    }
+    &:nth-child(3n-1) {
+      margin-right: 0;
+    }
+  }
+}
+.point-icon {
+  display: block;
+  margin: 3.5em 0 3em;
+  text-align: center;
+  &:before {
+    float: none;
+    padding: .75em;
+    font-size: 3em;
+    background-color: $bg-light;
+    border-radius: 50%;
+  }
+}
+.point-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+.home-cta {
+  clear: left;
+  text-align: center;
+}
+.copyright {
+  margin: .5em 0 1em;
+  text-align: center;
 }
