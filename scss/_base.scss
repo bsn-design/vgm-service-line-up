@@ -1,5 +1,5 @@
 // Base styles
-*, *:before, *:after { box-sizing: border-box; }
+*, *:before, *:after { @include box-sizing(border-box); }
 
 :root {
   background-color: $bg-light;
