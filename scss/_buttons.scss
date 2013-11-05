@@ -3,6 +3,7 @@
   width: auto;
   display: inline-block;
   margin: .5em; padding: 1em 1.5em;
+  cursor: pointer;
   text-decoration: none;
   background-color: $btn-default;
   @include background-image($btn-gradient);
