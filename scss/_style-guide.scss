@@ -33,20 +33,20 @@
   .collapsed & { display: none; }
 }
 .guide-main {
-  padding: 0 .5em;
+  padding: .5em;
   @include background-image($bg-gradient);
   @media screen and (min-width: $mq-text-small) {
-    padding: 0 .75em;
+    padding: .75em;
   }
   @media screen and (min-width: $mq-text-med) {
-    padding: 0 1em;
+    padding: 1em;
   }
   @media screen and (min-width: $mq-text-large) {
-    padding: 0 1.25em;
+    padding: 1.25em;
   }
 }
 .guide-section {
-  margin: .5em 0;
+  margin: 0 0 .5em;
   padding: .5em;
   background-color: $bg-lightest;
   @include background-image($section-gradient);
