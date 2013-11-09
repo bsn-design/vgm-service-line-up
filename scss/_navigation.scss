@@ -36,7 +36,7 @@ nav > ul {
     margin-top: .3em;
     font-size: 1em;
   }
-  &:hover, &.active {
+  &:hover, &.active, &.current {
     background-color: $nav-hover;
     @include background-image($nav-gradient-hover);
     color: $nav-text-hover;
