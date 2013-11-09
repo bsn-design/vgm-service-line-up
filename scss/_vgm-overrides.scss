@@ -38,9 +38,9 @@ $btn-gradient: linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.3));
 $btn-gradient-hover: linear-gradient(hsla(0,0%,0%,.3), hsla(0,0%,0%,0));
 
 $btn-primary: $brand-loud;
-$btn-primary-hover: lighten($btn-primary, 10%);
+$btn-primary-hover: darken($btn-primary, 10%);
 $btn-primary-gradient: linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,0));
-$btn-primary-gradient-hover: linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,.2));
+$btn-primary-gradient-hover: linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,.3));
 
 $btn-subtle: lighten($btn-default, 8%);
 $btn-subtle-hover: darken($btn-default,10%);

@@ -1,0 +1,34 @@
+.guide-main {
+  // Go all flexboxy
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@-moz-document url-prefix() { 
+  .guide-main { display: block; }
+}
+.guide-section:last-child {
+  width: 100%;
+  clear: left;
+}
+.center {
+  text-align: center;
+}
+.tagline-section {
+  width: 100%;
+}
+.tagline {
+  margin: 0;
+  text-align: center;
+}
+
+.copyright {
+  padding: 0 0 1.5em;
+  text-align: center;
+  p {
+    max-width: none;
+    margin: 0
+  }
+}

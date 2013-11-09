@@ -1,0 +1,40 @@
+.hero {
+  width: 100%;
+}
+.hero-title, .hero-subtitle {
+  margin: 0 0 .5em;
+}
+.hero-image {
+  position: relative;
+  width: 50%;
+  max-width: 15em;
+  overflow: hidden;
+  float: left;
+  margin: 0 1em .5em 0;
+  // Keeps it 1:1
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  .image {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url($base-path + '/img/woman-at-computer.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: $image-border-radius;
+    &.product {
+      background-image: url($base-path + '/img/man-at-computer.jpg');
+    }
+  }
+  @media screen and (min-width: $mq-text-med) {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    width: 15em;
+  }
+}
+.hero-text {
+  max-width: none;
+}
