@@ -1,29 +1,12 @@
+//- Variables for includes
+basePath = "/vgm-service-line-up"
+pageTitle = "Service Line Up"
+
 doctype 5
 html(lang='en')
-  head
-    title Service Line Up
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700', type='text/css', rel='stylesheet')
-    link(href="/css/style.css", type='text/css', rel='stylesheet')
-    //- link(rel="icon", type="image/png", href="/img/bsn-design-favicon.png")    
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    script(src="/js/modernizr.min.js")
+  include _head
   body
-    header.page-header
-      .container
-        h1.logo
-          a.logo-link(href="#") Service Line Up
-        nav
-          ul
-            li
-              a.nav-link.menu.icon-menu(href="#") Menu
-            li
-              a.nav-link.icon-products(href="#") Products
-            li
-              a.nav-link.icon-question(href="#") FAQ
-            li
-              a.nav-link.icon-contact(href="#") Contact
-            li
-              a.nav-link.icon-enter(href="#") Log In
+    include _header
     section.guide-main.container
       section.hero.guide-section.cf
         .hero-image
@@ -58,5 +41,5 @@ html(lang='en')
         h3.point-title Security
         p Service Line Up was built with highest possible security in mind. Not only do we use 128 bit AES key SSL security throughout the site, we also use a secure up to date Microsoft SQL 2012 database with enhanced form protection against SQL injections and buffer overruns.
       section.guide-section.home-cta
-        a.btn-primary.icon-cart Buy Now
+        a.btn-primary.icon-cart(href="#{basePath}/products") Buy Now
     include _footer

@@ -48,7 +48,7 @@
   .image {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: url(/img/woman-at-computer.jpg) no-repeat center center;
+    background: url($base-path + '/img/woman-at-computer.jpg') no-repeat center center;
     background-size: cover;
   }
   @media screen and (min-width: $mq-text-med) {
