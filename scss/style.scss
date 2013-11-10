@@ -63,3 +63,20 @@
 .active-question {
   border: .75em solid $brand-accent;
 }
+.phone {
+  @include flex;
+  @include align-items(center, center);
+  @include justify-content(center);
+}
+.phone-icon {
+  &:before {
+    display: inline-block;
+    float: none;
+    margin: 0 .5em 0 0;
+    padding: .5em;
+    background-color: $bg-light;
+    border-radius: 50%;
+    font-size: 2em;
+    line-height: 1;
+  }
+}

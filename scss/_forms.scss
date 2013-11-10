@@ -1,7 +1,10 @@
 // Forms
+form {
+  max-width: 30em;
+  margin: 0 auto;
+}
 .input, .textarea {
   width: 100%;
-  max-width: 30em;
   margin: .5em 0;
   padding: .5em;
   border: $input-border;
