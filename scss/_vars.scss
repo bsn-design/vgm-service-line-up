@@ -86,3 +86,26 @@ $input-shadow: none;
 $input-border-color: $bg-light;
 $input-border: .25em solid $input-border-color;
 $input-border-radius: 0;
+
+@mixin flex {
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-wrap($wrap: wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+@mixin align-items($align: start, $flex-align: flex-start) {
+  -webkit-box-align: $align;
+  -webkit-align-items: $flex-align;
+  // -moz-box-align: $align;
+  -ms-flex-align: $align;
+  align-items: $flex-align;
+}
+@mixin justify-content($justify: space-around) {
+  -webkit-justify-content: $justify;
+  // -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+}

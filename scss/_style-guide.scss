@@ -46,6 +46,7 @@
   }
 }
 .guide-section {
+  width: 100%;
   margin: 0 0 .5em;
   padding: .5em;
   background-color: $bg-lightest;
@@ -65,7 +66,6 @@
   }
 }
 .section-header {
-  overflow: hidden;
   font-size: 1.5em;
   margin: 0 0 .75em;
   .collapsed & {

@@ -4,7 +4,6 @@
 @import "normalize";
 @import "fonts";
 @import "base";
-@import "layout";
 @import "style-guide";
 @import "typography";
 @import "colors";
@@ -17,3 +16,50 @@
 @import "point";
 @import "hero";
 @import "price";
+@import "layout";
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+}
+.faq-icon {
+  margin-right: .5em;
+  margin-bottom: .5em;
+  float: left;
+  &:before {
+    display: inline-block;
+    padding: .5em;
+    font-size: 1.25em;
+    line-height: 1;
+    background-color: $bg-light;
+    border-radius: 50%;
+  }
+}
+.faq-questions {
+  @include flex;
+  @include flex-wrap;
+}
+.block {
+  width: 100%;
+  @media screen and (min-width: $mq-text-large) {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    width: calc(50% - .625em);
+    &:nth-child(1) {
+      margin-right: 1.25em;
+    }
+  }
+}
+.question-title {
+  margin: 0 .5em 0 0;
+  font-size: 1em;
+}
+.active-question {
+  border: .75em solid $brand-accent;
+}

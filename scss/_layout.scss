@@ -32,3 +32,45 @@
     margin: 0
   }
 }
+.two-up {
+  @media screen and (min-width: $mq-text-large) {
+    width: 50%;
+    width: calc(50% - .625em);
+    &:nth-child(odd) {
+      margin-right: 1.25em;
+    }
+  }
+}
+.three-up {
+  @media screen and (min-width: $mq-text-small) {
+    float: left;
+    width: 50%;
+    width: calc(50% - .375em);
+    margin-top: 0;
+    &:nth-child(odd) {
+      margin-right: .75em;
+    }
+  }
+  @media screen and (min-width: $mq-text-med) {
+    width: calc(50% - .5em);
+    &:nth-child(odd) {
+      margin-right: 1em;
+    }
+  }
+  @media screen and (min-width: $mq-text-large) {
+    width: calc(50% - .625em);
+    &:nth-child(odd) {
+      margin-right: 1.25em;
+    }
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    width: 33%;
+    width: calc(32.9% - .625em);
+    &:nth-child(even), &:nth-child(odd) {
+      margin-right: 1.25em;
+    }
+    &:nth-child(3n-1) {
+      margin-right: 0;
+    }
+  }
+}
