@@ -80,3 +80,10 @@
     line-height: 1;
   }
 }
+.product-title {
+  @extend .section-title;
+  text-align: center;
+}
+.coming-soon {
+  opacity: .5;
+}

@@ -41,6 +41,7 @@ p {
     background-color: $link-hover;
     box-shadow: .25em 0 0 $link-hover,  
                 -.25em 0 0 $link-hover;
+    border-radius: .25em;
   }
 }
 .text-testing {

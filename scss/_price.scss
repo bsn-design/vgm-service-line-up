@@ -36,7 +36,7 @@
   font-family: $headline-font;
   font-size: 1.5em;
   text-align: center;
-  color: $brand-loud;
+  color: $brand-red;
   @media screen and (min-width: 23em) and (max-width: $mq-text-large), screen and (min-width: 60em) {
     position: absolute;
     top: .5em; right: .5em;
@@ -46,7 +46,7 @@
     height: 5em;
     line-height: 1.2;
     border-radius: 50%;
-    border: .3em solid $brand-loud;
+    border: .3em solid $brand-red;
     z-index: 1;
     @include rotate(30deg);
     &:after {
