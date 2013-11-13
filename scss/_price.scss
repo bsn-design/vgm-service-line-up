@@ -15,6 +15,11 @@
   background-color: $bg-light;
   border-radius: .25em;
 }
+.monthly {
+  @media screen and (min-width: $mq-text-large) and (max-width: 60em) {
+    margin-bottom: .8em;
+  }
+}
 .price-term {
   display: block;
   margin-top: -.5em;
