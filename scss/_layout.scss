@@ -9,10 +9,6 @@
 @-moz-document url-prefix() { 
   .guide-main { display: block; }
 }
-.guide-section:last-child {
-  width: 100%;
-  clear: left;
-}
 .center {
   text-align: center;
 }
