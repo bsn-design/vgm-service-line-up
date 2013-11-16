@@ -20,11 +20,11 @@
   .image {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: url($base-path + '/img/woman-at-computer.jpg') no-repeat center center;
+    background: url($base-path + '/img/man-at-computer.jpg') no-repeat center center;
     background-size: cover;
     border-radius: $image-border-radius;
     &.product {
-      background-image: url($base-path + '/img/man-at-computer.jpg');
+      background-image: url($base-path + '/img/woman-at-computer.jpg');
     }
   }
   @media screen and (min-width: $mq-text-med) {
