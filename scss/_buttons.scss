@@ -40,6 +40,9 @@
     @include background-image($btn-subtle-gradient-hover);
   }
 }
+.btn-social {
+  @extend .btn-default;
+}
 .icon {
   width: 3.25em;
   padding-left: .7em;
