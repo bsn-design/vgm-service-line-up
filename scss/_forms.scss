@@ -96,6 +96,7 @@ input:focus:invalid,
 textarea:focus:invalid {
   background-color: $brand-red;
   border-color: $brand-red;
+  color: $text-light;
 }
 ::-webkit-input-placeholder {
   color: $text-light;
