@@ -62,12 +62,12 @@
 .active-question {
   border: .75em solid $brand-accent;
 }
-.phone {
+.contact-block {
   @include flex;
   @include align-items(center, center);
   @include justify-content(center);
 }
-.phone-icon {
+.contact-block-icon {
   &:before {
     display: inline-block;
     float: none;
@@ -77,6 +77,12 @@
     border-radius: 50%;
     font-size: 2em;
     line-height: 1;
+  }
+}
+.address {
+  h3 {
+    margin: 0;
+    text-align: left;
   }
 }
 .product-title {

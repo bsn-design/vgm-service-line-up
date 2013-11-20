@@ -28,9 +28,14 @@ html(lang='en')
             textarea.textarea(name="message", placeholder="Your message", rows="8", id="message" required)
           .center
             button.btn-primary.icon-send Send        
-      section.guide-section.phone.center
-        i.icon-phone.phone-icon
+      section.guide-section.contact-block.center
+        i.icon-phone.contact-block-icon
         h3.phone-number 800-963-8847
+      section.guide-section.contact-block.center
+        i.icon-contact.contact-block-icon
+        .address
+          h3 5278 Pinemont Dr. A240
+          h3 Murray, UT 84123
     include _footer
     script(src="#{basePath}/js/jquery.formance.min.js")
     script.
