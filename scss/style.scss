@@ -162,3 +162,30 @@
     }
   }
 }
+.anchor-link {
+  margin-left: .5em;
+  padding-left: 0;
+  text-decoration: none;
+  color: $text-dark;
+  &:before {
+    float: none;
+    padding: .3em;
+    font-size: .75em;
+    border: .2em solid transparent;
+    border-radius: $btn-border-radius;
+    opacity: 0;
+    @include transition-property(opacity, border-color, background-color, color);
+    @include transition-duration(.3s);
+  }
+}
+.anchor:hover .anchor-link {
+  &:before {
+    opacity: .5;
+  }
+  &:hover:before {
+    opacity: 1;
+    color: $text-light;
+    border-color: $text-dark;
+    background-color: $link-hover;
+  }
+}

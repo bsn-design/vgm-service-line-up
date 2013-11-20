@@ -29,10 +29,10 @@
   }
 }
 .two-up {
-  @media screen and (min-width: $mq-text-large) {
+  @media screen and (min-width: $mq-nav-large) {
     width: 50%;
     width: calc(50% - .625em);
-    &:nth-child(odd) {
+    &:nth-child(even) {
       margin-right: 1.25em;
     }
   }

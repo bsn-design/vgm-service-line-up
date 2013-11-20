@@ -36,101 +36,104 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
-.icon-credit:before {
+.icon-link:before {
 	content: "\e600";
 }
-.icon-clipboard:before {
+.icon-youtube:before {
 	content: "\e601";
 }
-.icon-cog:before {
+.icon-facebook:before {
 	content: "\e602";
 }
-.icon-mobile:before {
+.icon-twitter:before {
 	content: "\e603";
 }
-.icon-starburst:before {
+.icon-google-plus:before {
 	content: "\e604";
 }
-.icon-broom:before {
+.icon-info:before {
 	content: "\e605";
 }
-.icon-cart:before {
+.icon-question:before {
 	content: "\e606";
 }
-.icon-stats:before {
+.icon-user:before {
 	content: "\e607";
 }
-.icon-briefcase:before {
+.icon-contact:before {
 	content: "\e608";
 }
-.icon-users:before {
+.icon-mobile:before {
 	content: "\e609";
 }
-.icon-coin:before {
+.icon-cog:before {
 	content: "\e60a";
 }
-.icon-calendar:before {
+.icon-clipboard:before {
 	content: "\e60b";
 }
-.icon-home:before {
+.icon-credit:before {
 	content: "\e60c";
 }
-.icon-products:before {
+.icon-starburst:before {
 	content: "\e60d";
 }
-.icon-contact:before {
+.icon-broom:before {
 	content: "\e60e";
 }
-.icon-user:before {
+.icon-cart:before {
 	content: "\e60f";
 }
-.icon-question:before {
+.icon-stats:before {
 	content: "\e610";
 }
-.icon-info:before {
+.icon-briefcase:before {
 	content: "\e611";
 }
-.icon-send:before {
+.icon-users:before {
 	content: "\e612";
 }
-.icon-checkmark:before {
+.icon-coin:before {
 	content: "\e613";
 }
-.icon-enter:before {
+.icon-calendar:before {
 	content: "\e614";
 }
-.icon-up:before {
+.icon-home:before {
 	content: "\e615";
 }
-.icon-right:before {
+.icon-products:before {
 	content: "\e616";
 }
-.icon-down:before {
+.icon-send:before {
 	content: "\e617";
 }
-.icon-left:before {
+.icon-checkmark:before {
 	content: "\e618";
 }
-.icon-menu:before {
+.icon-enter:before {
 	content: "\e619";
 }
-.icon-lock:before {
+.icon-up:before {
 	content: "\e61a";
 }
-.icon-phone:before {
+.icon-right:before {
 	content: "\e61b";
 }
-.icon-google-plus:before {
+.icon-down:before {
 	content: "\e61c";
 }
-.icon-twitter:before {
+.icon-left:before {
 	content: "\e61d";
 }
-.icon-facebook:before {
+.icon-menu:before {
 	content: "\e61e";
 }
-.icon-youtube:before {
+.icon-lock:before {
 	content: "\e61f";
 }
-$icon-checkmark: "\e613";
-$icon-starburst: "\e604";
+.icon-phone:before {
+	content: "\e620";
+}
+$icon-checkmark: "\e618";
+$icon-link: "\e600";
