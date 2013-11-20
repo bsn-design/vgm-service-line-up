@@ -15,20 +15,25 @@ html(lang='en')
       section.guide-section
         form
           .input-group
-            label.label(for="name") Name<span class="required">*</span>
+            label.label(for="name") Name
             input.input(name="name", type="text", placeholder="Your name", id="name" required)
           .input-group
-            label.label(for="email") Email<span class="required">*</span>
-            input.input(name="email", type="email", placeholder="Your email", id="email" required)
+            label.label(for="email") Email
+            input.input(name="email", type="email", placeholder="Your email", id="email", data-formance_algorithm="complex" required)
           .input-group
-            label.label(for="phone") Phone Number
+            label.label(for="phone") Phone Number (optional)
             input.input(name="phone", type="tel", placeholder="Your number", id="phone")
           .input-group
-            label.label(for="message") Message<span class="required">*</span>
-            textarea.textarea(name="message", placeholder="Message", rows="8" required)
+            label.label(for="message") Message
+            textarea.textarea(name="message", placeholder="Your message", rows="8", id="message" required)
           .center
             button.btn-primary.icon-send Send        
       section.guide-section.phone.center
         i.icon-phone.phone-icon
         h3.phone-number 800-963-8847
     include _footer
+    script(src="#{basePath}/js/jquery.formance.min.js")
+    script.
+      $(function() {
+        $("#phone").formance('format_phone_number');
+      });

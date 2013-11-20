@@ -90,3 +90,32 @@ input[type="submit"] {
   display: block;
   margin-left: 0;
 }
+
+// Style required fields
+input:focus:invalid,
+textarea:focus:invalid {
+  background-color: $brand-red;
+  border-color: $brand-red;
+}
+::-webkit-input-placeholder {
+  color: $text-light;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $text-light;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $text-light;  
+}
+:-ms-input-placeholder {  
+  color: $text-light;  
+}
+
+input:required:focus:valid,
+textarea:required:focus:valid {
+  background-color: $brand-loud;
+  color: $text-light;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: $brand-loud;
+}
