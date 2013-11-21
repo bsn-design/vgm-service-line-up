@@ -28,6 +28,11 @@
     margin: .5em 0 0;
   }
 }
+.one-up {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
 .two-up {
   @media screen and (min-width: $mq-nav-large) {
     width: 50%;
