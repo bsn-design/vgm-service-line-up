@@ -1,10 +1,8 @@
 .guide-main {
   // Go all flexboxy
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  @include flex;
+  @include flex-wrap;
+  @include justify-content(space-between);
 }
 @-moz-document url-prefix() { 
   .guide-main { display: block; }
@@ -37,9 +35,6 @@
   @media screen and (min-width: $mq-nav-large) {
     width: 50%;
     width: calc(50% - .625em);
-    &:nth-child(even) {
-      margin-right: 1.25em;
-    }
   }
 }
 .three-up {
@@ -48,49 +43,25 @@
     width: 50%;
     width: calc(50% - .375em);
     margin-top: 0;
-    &:nth-child(odd) {
-      margin-right: .75em;
-    }
   }
   @media screen and (min-width: $mq-text-med) {
     width: calc(50% - .5em);
-    &:nth-child(odd) {
-      margin-right: 1em;
-    }
   }
   @media screen and (min-width: $mq-text-large) {
     width: calc(50% - .625em);
-    &:nth-child(odd) {
-      margin-right: 1.25em;
-    }
   }
   @media screen and (min-width: $mq-nav-large) {
     width: 33%;
     width: calc(32.9% - .625em);
-    &:nth-child(even), &:nth-child(odd) {
-      margin-right: 1.25em;
-    }
-    &:nth-child(3n-1) {
-      margin-right: 0;
-    }
   }
 }
 .four-up {
-  @media screen and (min-width: $mq-text-small) {
-    width: 50%;
-    width: calc(50% - .625em);
-    &:nth-child(odd) {
-      margin-right: 1.25em;
-    }
+  @extend .three-up;
+  @media screen and (min-width: $mq-nav-large) {
+    width: calc(50% - .5em);
   }
   @media screen and (min-width: 79em) {
     width: 25%;
     width: calc(24.5% - .625em);
-    &:nth-child(even) {
-      margin-right: 1.25em;
-    }
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
   }
 }

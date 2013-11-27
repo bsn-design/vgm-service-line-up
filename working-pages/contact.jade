@@ -12,21 +12,26 @@ html(lang='en')
         h1.hero-title Contact Us
         p.hero-text Drop us a line or give us a call. We&rsquo;d love to chat.
       section.guide-section
-        form
+        form(id="form1", name="form1", method="post", action="https://servicelineup.wufoo.com/forms/z1np51lc07ka50v/#public", target="hidden_iframe", onsubmit="thanks();")
           .input-group
-            label.label(for="name") Name
-            input.input(name="name", type="text", placeholder="Your name", id="name" required)
+            label.label(for="Field1") Name
+            input.input(name="Field1", type="text", placeholder="Your name", id="name" required)
           .input-group
-            label.label(for="email") Email
-            input.input(name="email", type="email", placeholder="Your email", id="email", data-formance_algorithm="complex" required)
+            label.label(for="Field2") Email
+            input.input(name="Field2", type="email", placeholder="Your email", id="email", data-formance_algorithm="complex" required)
           .input-group
-            label.label(for="phone") Phone Number (optional)
-            input.input(name="phone", type="tel", placeholder="Your number", id="phone")
+            label.label(for="Field4") Phone Number (optional)
+            input.input(name="Field4", type="tel", placeholder="Your number", id="phone")
           .input-group
-            label.label(for="message") Message
-            textarea.textarea(name="message", placeholder="Your message", rows="8", id="message" required)
+            label.label(for="Field5") Message
+            textarea.textarea(name="Field5", placeholder="Your message", rows="8", id="message" required)
+          input#idstamp(name="idstamp", type="hidden", value="6OLdjfplL4nXWyxUTLm4vvv4Detdigw2ucOauRmbqtQ=")
           .center
-            button.btn-primary.icon-send Send        
+            button.btn-primary.icon-send Send
+        iframe#hidden_iframe(name="hidden_iframe", style="display:none;", onload)
+        .thanks.center
+          h2.section-title Thank you!
+          p.hero-text We&rsquo;ll be in touch soon.
       section.guide-section.contact-block.center
         i.icon-phone.contact-block-icon
         h3.phone-number 800-963-8847
@@ -41,3 +46,7 @@ html(lang='en')
       $(function() {
         $("#phone").formance('format_phone_number');
       });
+      function thanks() {
+        $("#form1").slideUp();
+        $(".thanks").show();
+      }
