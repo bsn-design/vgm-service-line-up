@@ -2,7 +2,7 @@
   // Go all flexboxy
   @include flex;
   @include flex-wrap;
-  @include justify-content(space-between);
+  @include justify-content(space-between, justify);
 }
 @-moz-document url-prefix() { 
   .guide-main { display: block; }

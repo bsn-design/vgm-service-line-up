@@ -105,9 +105,9 @@ $input-border-radius: 0;
   -ms-flex-align: $align;
   align-items: $flex-align;
 }
-@mixin justify-content($justify: space-around) {
+@mixin justify-content($justify: space-around, $ms-justify: justify) {
   -webkit-justify-content: $justify;
   // -moz-justify-content: $justify;
-  -ms-flex-pack: justify; // Only other options are start and end
+  -ms-flex-pack: $justify; // Only other options are start and end
   justify-content: $justify;
 }

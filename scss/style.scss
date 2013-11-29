@@ -54,7 +54,7 @@
 .contact-block {
   @include flex;
   @include align-items(center, center);
-  @include justify-content(center);
+  @include justify-content(center, center);
 }
 .contact-block-icon {
   &:before {
