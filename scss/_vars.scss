@@ -108,6 +108,6 @@ $input-border-radius: 0;
 @mixin justify-content($justify: space-around, $ms-justify: justify) {
   -webkit-justify-content: $justify;
   // -moz-justify-content: $justify;
-  -ms-flex-pack: $justify; // Only other options are start and end
+  -ms-flex-pack: $ms-justify; // Only other options are start and end
   justify-content: $justify;
 }
