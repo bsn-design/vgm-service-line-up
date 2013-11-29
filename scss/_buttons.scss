@@ -44,6 +44,7 @@
 }
 .btn-social {
   @extend .btn-default;
+  background-color: darken($btn-default,10%);
 }
 .icon {
   width: 3.25em;
