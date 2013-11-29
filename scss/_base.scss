@@ -1,7 +1,7 @@
 // Base styles
 *, *:before, *:after { @include box-sizing(border-box); }
 
-:root {
+html {
   background-color: $bg-light;
   height: 100%;
   color: $text-dark;
