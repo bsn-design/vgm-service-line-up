@@ -77,10 +77,12 @@
   .link {
     display: inline-block;
     font-size: .5em;
+    text-decoration: none;
     &:before { 
       margin-top: .5em;
       margin-right: .25em;
       font-size: 1em;
+      float: none;
     }
   }
 }
