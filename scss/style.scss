@@ -17,6 +17,7 @@
 @import "hero";
 @import "price";
 @import "layout";
+@import "conditionals";
 
 .faq-list {
   list-style: none;
@@ -145,7 +146,7 @@
 }
 @media screen and (min-width: $mq-nav-large) {
   .split-large-child {
-    float: left;
+    display: inline-block;
     width: 50%;
     width: calc(50% - .625em);
   }

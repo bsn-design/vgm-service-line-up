@@ -39,7 +39,6 @@
 }
 .three-up {
   @media screen and (min-width: $mq-text-small) {
-    float: left;
     width: 50%;
     width: calc(50% - .375em);
     margin-top: 0;
