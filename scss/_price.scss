@@ -25,14 +25,3 @@
   margin-top: -.5em;
   font-size: .5em;
 }
-.price-bullet {
-  margin-left: 12%; 
-  &:before {
-    margin-right: .5em;
-    padding: .25em;
-    font-size: .75em;
-    float: none;
-    border-radius: 50%;
-    border: 2px solid $text-dark;
-  }
-}

@@ -19,6 +19,18 @@
 @import "layout";
 @import "conditionals";
 
+.bullet {
+  margin-left: 12%; 
+  &:before {
+    margin-right: .5em;
+    padding: .25em;
+    font-size: .75em;
+    float: none;
+    border-radius: 50%;
+    border: 2px solid $text-dark;
+  }
+}
+
 .faq-list {
   list-style: none;
   margin: 0;
@@ -149,6 +161,21 @@
     display: inline-block;
     width: 50%;
     width: calc(50% - .625em);
+  }
+}
+.split-med-child {
+  text-align: left;
+}
+@media screen and (min-width: 26em) {
+  .split-med {
+    display: inline-block;
+    width: 100%;
+    max-width: 25em;
+    margin: 0 auto;
+  }
+  .split-med-child {
+    display: inline-block;
+    width: 49%;
   }
 }
 .anchor-link {
