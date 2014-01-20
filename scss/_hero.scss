@@ -20,8 +20,11 @@
     background: url($base-path + '/img/man-at-computer.jpg') no-repeat top left;
     background-size: cover;
     border-radius: $image-border-radius;
-    &.product {
+    &.cleaning {
       background-image: url($base-path + '/img/woman-at-computer.jpg');
+    }
+    &.field {
+      background-image: url($base-path + '/img/man-at-window.jpg');
     }
   }
   @media screen and (min-width: $mq-text-med) {
