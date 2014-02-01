@@ -205,3 +205,13 @@
     background-color: $link-hover;
   }
 }
+.product-description {
+  @include flex;
+  @include flex-direction;
+}
+@-moz-document url-prefix() { 
+  .product-description { display: inline-block; }
+}
+.product-tagline {
+  @include flex-child(1 0 auto);
+}

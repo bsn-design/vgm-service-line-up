@@ -99,6 +99,11 @@ $input-border-radius: 0;
   -ms-flex-wrap: $wrap;
   flex-wrap: $wrap;
 }
+@mixin flex-direction($direction: column) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
 @mixin align-items($align: start, $flex-align: flex-start) {
   -webkit-box-align: $align;
   -webkit-align-items: $flex-align;
@@ -106,9 +111,21 @@ $input-border-radius: 0;
   -ms-flex-align: $align;
   align-items: $flex-align;
 }
+@mixin align-content($align: start, $flex-align: flex-start) {
+  // -webkit-box-align: $align;
+  -webkit-align-content: $flex-align;
+  // // -moz-box-align: $align;
+  -ms-flex-pack: $align;
+  align-content: $flex-align;  
+}
 @mixin justify-content($justify: space-around, $ms-justify: justify) {
   -webkit-justify-content: $justify;
   // -moz-justify-content: $justify;
   -ms-flex-pack: $ms-justify; // Only other options are start and end
   justify-content: $justify;
+}
+@mixin flex-child($values) {
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
 }

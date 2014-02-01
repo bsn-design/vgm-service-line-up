@@ -1,10 +1,18 @@
+.page {
+  @include flex;
+  min-height: 100%;
+  @include flex-direction;
+}
 .guide-main {
   // Go all flexboxy
   @include flex;
   @include flex-wrap;
   @include justify-content(space-between, justify);
+  @include align-content;
+  @include flex-child(1 0 auto);
 }
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
+  .page { display: block; }
   .guide-main { display: block; }
 }
 .center {

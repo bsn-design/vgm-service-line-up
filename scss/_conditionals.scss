@@ -6,8 +6,11 @@
   .two-up {
     @media screen and (min-width: $mq-nav-large) {
       width: 48%;
-      &:nth-child(even) {
+      &:not(.product-description):nth-child(even) {
         margin-right: 1.25em;
+      }
+      &.product-description:nth-child(odd) {
+        margin-right: 1.25em;        
       }
     } 
   }

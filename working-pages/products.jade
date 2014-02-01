@@ -5,27 +5,23 @@ productsClasses = "current"
 doctype 5
 html(lang='en')
   include _head
-  body
+  body.page
     include _header
     section.guide-main.container
-      section.guide-section.four-up
+      section.guide-section.two-up.product-description
         header.section-header
           h2.product-title Field Service Software
-        .section-main
+        .section-main.product-tagline
           p Electrical, Plumbing, HVAC, Landscaping, Pet Care, and Pool Service
+        footer
           .center
             a.btn-primary.icon-right(href="field-service-software") Learn More
-      section.guide-section.four-up
+      section.guide-section.two-up.product-description
         header.section-header
           h2.product-title Cleaning Software
-        .section-main
+        .section-main.product-tagline
           p House Cleaning, Janitorial, Window Cleaning, and Maid Service
+        footer
           .center
             a.btn-primary.icon-right(href="cleaning-software") Learn More
-      section.guide-section.four-up.coming-soon
-        header.section-header
-          h2.product-title Coming Soon&hellip;
-      section.guide-section.four-up.coming-soon
-        header.section-header
-          h2.product-title Coming Soon&hellip;
     include _footer
