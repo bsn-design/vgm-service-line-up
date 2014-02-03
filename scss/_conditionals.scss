@@ -91,5 +91,11 @@
   }
   .address h3 {
     text-align: center;
-  }  
+  }
+  .video-wrapper {
+    @media screen and (min-width: $mq-nav-large) {
+      width: 50%;
+      padding: .5em;
+    }
+  }
 }
