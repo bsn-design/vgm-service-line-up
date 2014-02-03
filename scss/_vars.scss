@@ -89,7 +89,7 @@ $input-border: .25em solid $input-border-color;
 $input-border-radius: 0;
 
 @mixin flex {
-  display: inline-block; //Fallback for no flexbox support
+  // display: inline-block; //Fallback for no flexbox support
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
