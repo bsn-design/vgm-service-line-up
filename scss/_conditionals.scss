@@ -92,8 +92,8 @@
   .address h3 {
     text-align: center;
   }
-  .video-wrapper {
-    @media screen and (min-width: $mq-nav-large) {
+  @media screen and (min-width: $mq-nav-large) {
+    .video-wrapper {
       width: 50%;
       padding: .5em;
     }
