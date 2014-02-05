@@ -115,7 +115,7 @@ $input-border-radius: 0;
   // -webkit-box-align: $align;
   -webkit-align-content: $flex-align;
   // // -moz-box-align: $align;
-  -ms-flex-pack: $align;
+  -ms-flex-line-pack: $align;
   align-content: $flex-align;  
 }
 @mixin justify-content($justify: space-around, $ms-justify: justify) {

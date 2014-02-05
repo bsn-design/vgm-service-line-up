@@ -1,7 +1,7 @@
 .page {
   @include flex;
   min-height: 100%;
-  @include flex-direction;
+  @include flex-direction(column);
 }
 .guide-main {
   // Go all flexboxy
