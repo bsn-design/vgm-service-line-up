@@ -75,6 +75,14 @@
       }
     }
   }
+  .video-wrapper {
+    @media screen and (min-width: $mq-text-med) {
+      width: 49%;
+    }
+    @media screen and (min-width: $mq-nav-large) {
+      width: 32%;
+    }
+  }
 }
 .no-cssgradients {
   // .tagline-section,
