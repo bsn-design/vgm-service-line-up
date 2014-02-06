@@ -1,0 +1,224 @@
+.bullet {
+  margin-left: 12%; 
+  &:before {
+    margin-right: .5em;
+    padding: .25em;
+    font-size: .75em;
+    float: none;
+    border-radius: 50%;
+    border: 2px solid $text-dark;
+  }
+}
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 1em;
+  }
+}
+.faq-icon {
+  margin-right: .5em;
+  margin-bottom: .5em;
+  float: left;
+  &:before {
+    display: inline-block;
+    padding: .5em;
+    font-size: 1.25em;
+    line-height: 1;
+    background-color: $bg-light;
+    border-radius: 50%;
+  }
+}
+.faq-questions {
+  @include flex;
+  @include flex-wrap;
+}
+.question-title {
+  margin: 0 .5em 0 0;
+  font-size: 1em;
+}
+.active-question {
+  border: .75em solid $brand-accent;
+}
+.contact-block {
+  @include flex;
+  @include align-items(center, center);
+  @include justify-content(center, center);
+}
+.contact-block-icon {
+  &:before {
+    display: inline-block;
+    float: none;
+    margin: 0 .5em 0 0;
+    padding: .5em;
+    background-color: $bg-light;
+    border-radius: 50%;
+    font-size: 2em;
+    line-height: 1;
+  }
+}
+.address {
+  h3 {
+    margin: 0;
+    text-align: left;
+  }
+}
+.product-title {
+  @extend .section-title;
+  text-align: center;
+}
+.coming-soon {
+  opacity: .5;
+}
+.price-stamp {
+  margin-top: -.5em;
+  font-family: $headline-font;
+  font-size: 1.75em;
+  text-align: center;
+  color: $brand-red;
+  @media screen and (min-width: 21.5em) and (max-width: $mq-text-large), screen and (min-width: 60em) {
+    position: absolute;
+    top: .5em; right: .5em;
+    margin: 0;
+    padding-top: .5em;
+    width: 4em;
+    height: 4em;
+    line-height: 1.2;
+    border-radius: 50%;
+    border: .3em solid $brand-red;
+    z-index: 1;
+    @include rotate(30deg);
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%; left: -.35em;
+      margin-top: -.75em;
+      width: 4.1em;
+      height: 1.5em;
+      z-index: -1;
+      background-color: $bg-lightest;
+    }
+  }
+}
+.home-stamp {
+  font-family: $headline-font;
+  font-size: 1em;
+  text-align: center;
+  color: $brand-red;
+  position: absolute;
+  bottom: .5em; right: .5em;
+  margin: 0;
+  padding-top: .75em;
+  width: 5em;
+  height: 5em;
+  line-height: 1.2;
+  border-radius: 50%;
+  border: .3em solid $brand-red;
+  z-index: 1;
+  @include rotate(30deg);
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%; left: -.5em;
+    margin-top: -1em;
+    width: 5.5em;
+    height: 2em;
+    z-index: -1;
+    background-color: $bg-lightest;
+  }
+}
+.home-cta {
+  padding-right: 5em;
+  .btn-primary {
+    margin: .75em;
+  }
+}
+@media screen and (min-width: $mq-nav-large) {
+  .split-large-child {
+    display: inline-block;
+    width: 50%;
+    width: calc(50% - .625em);
+  }
+}
+.split-med-child {
+  text-align: left;
+}
+@media screen and (min-width: 26em) {
+  .split-med {
+    display: inline-block;
+    width: 100%;
+    max-width: 25em;
+    margin: 0 auto;
+  }
+  .split-med-child {
+    display: inline-block;
+    width: 49%;
+  }
+}
+.anchor-link {
+  margin-left: .5em;
+  padding-left: 0;
+  text-decoration: none;
+  color: $text-dark;
+  &:before {
+    float: none;
+    padding: .3em;
+    font-size: .75em;
+    border: .2em solid transparent;
+    border-radius: $btn-border-radius;
+    opacity: 0;
+    @include transition-property(opacity, border-color, background-color, color);
+    @include transition-duration(.3s);
+  }
+}
+.anchor:hover .anchor-link {
+  &:before {
+    opacity: .5;
+  }
+  &:hover:before {
+    opacity: 1;
+    color: $text-light;
+    border-color: $text-dark;
+    background-color: $link-hover;
+  }
+}
+.product-description {
+  @include flex;
+  @include flex-direction;
+}
+@-moz-document url-prefix() { 
+  .product-description { display: inline-block; }
+}
+.product-tagline {
+  @include flex-child(1 0 auto);
+}
+.video-grid {
+  @include flex;
+  @include justify-content;//($justify: space-between);
+  @include flex-wrap;
+}
+.video-wrapper {
+  display: inline-block;
+  width: 100%;
+  padding: .5em;
+  @media screen and (min-width: $mq-text-med) {
+    width: 50%;
+  }
+  @media screen and (min-width: $mq-nav-large) {
+    width: 33%;
+    padding: 1em;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%; width: 100%;
+  }
+}
