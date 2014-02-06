@@ -13,8 +13,7 @@
   @include align-self(center, center);
 }
 @-moz-document url-prefix() {
-  .page { display: block; }
-  .guide-main { display: block; }
+  .page, .guide-main, .video-grid { display: block; }
 }
 .center {
   text-align: center;
