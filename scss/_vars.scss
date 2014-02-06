@@ -129,3 +129,9 @@ $input-border-radius: 0;
   -ms-flex: $values;
   flex: $values;
 }
+@mixin align-self($align, $flex-align) {
+  -webkit-align-self: $flex-align;
+  // -moz-align-self: $align;
+  -ms-flex-item-align: $align;
+  align-self: $flex-align;
+}

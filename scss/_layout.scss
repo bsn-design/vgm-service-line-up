@@ -10,6 +10,7 @@
   @include justify-content(space-between, justify);
   @include align-content;
   @include flex-child(1 0 auto);
+  @include align-self(center, center);
 }
 @-moz-document url-prefix() {
   .page { display: block; }
