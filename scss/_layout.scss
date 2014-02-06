@@ -12,9 +12,6 @@
   @include flex-child(1 0 auto);
   @include align-self(center, center);
 }
-@-moz-document url-prefix() {
-  .page, .guide-main, .video-grid { display: block; }
-}
 .center {
   text-align: center;
 }
