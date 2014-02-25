@@ -4,7 +4,15 @@
 .hero-title, .hero-subtitle {
   margin: 0 0 .5em;
 }
+// .hero img {
+//   width: 50%;
+//   max-width: 20em;
+//   float: left;
+//   margin: 0 1em .5em 0;
+//   border-radius: $image-border-radius;
+// }
 .hero-image {
+  @extend .center;
   position: relative;
   width: 50%;
   max-width: 15em;
@@ -16,6 +24,12 @@
     content: '';
     display: block;
     padding-top: 100%;
+  }
+  img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    opacity: 0;
   }
   .image {
     position: absolute;
