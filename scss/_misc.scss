@@ -210,6 +210,11 @@
     width: 33%;
     padding: 1em;
   }
+  &.home-intro {
+    width: 100%;
+    max-width: 40em;
+    padding: 0;
+  }
 }
 .video-container {
   position: relative;

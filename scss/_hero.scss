@@ -20,9 +20,12 @@
   .image {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: url($base-path + '/img/man-at-computer.jpg') no-repeat top left;
+    background: url($base-path + '/img/man-at-computer.jpg') no-repeat top center;
     background-size: cover;
     border-radius: $image-border-radius;
+    &.product {
+      background-image: url($base-path + '/img/man-on-phone.jpg');
+    }
     &.cleaning {
       background-image: url($base-path + '/img/woman-at-computer.jpg');
     }
