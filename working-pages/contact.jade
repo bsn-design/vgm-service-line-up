@@ -1,8 +1,8 @@
 //- Variables for includes
-pageTitle = "Contact | Service Line Up"
-contactClasses = "current"
+- pageTitle = "Contact | Service Line Up"
+- contactClasses = "current"
 
-doctype 5
+doctype html
 html(lang='en')
   include _head
   body.page
@@ -41,7 +41,7 @@ html(lang='en')
           h3 5278 Pinemont Dr. A240
           h3 Murray, UT 84123
     include _footer
-    script(src="#{basePath}/js/jquery.formance.min.js")
+    script(src="/js/jquery.formance.min.js")
     script.
       $(function() {
         $("#phone").formance('format_phone_number');

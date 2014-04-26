@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact | Service Line Up</title>
+    <title>Blog | Service Line Up</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400italic,400,700" type="text/css" rel="stylesheet">
     <link href="/css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/img/service-line-up-favicon.png">
@@ -18,57 +18,14 @@
             <li><a href="#" class="nav-link menu icon-menu">Menu</a></li>
             <li><a href="/products" class="nav-link icon-products undefined">Products</a></li>
             <li><a href="/faq" class="nav-link icon-question undefined">FAQ</a></li>
-            <li><a href="/press" class="nav-link icon-book undefined">Blog</a></li>
-            <li><a href="/contact" class="nav-link icon-contact current">Contact</a></li>
+            <li><a href="/press" class="nav-link icon-book current">Blog</a></li>
+            <li><a href="/contact" class="nav-link icon-contact undefined">Contact</a></li>
             <li><a href="undefined/Login.aspx" class="nav-link icon-enter">Log In</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="guide-main container">
-      <section class="guide-section">
-        <h1 class="hero-title">Contact Us</h1>
-        <p class="hero-text">Drop us a line or give us a call. We&rsquo;d love to chat.</p>
-      </section>
-      <section class="guide-section contact-form">
-        <form id="form1" name="form1" method="post" action="https://servicelineup.wufoo.com/forms/z1np51lc07ka50v/#public" target="hidden_iframe" onsubmit="thanks();">
-          <div class="input-group">
-            <label for="Field1" class="label">Name</label>
-            <input name="Field1" type="text" placeholder="Your name" id="name" required class="input">
-          </div>
-          <div class="input-group">
-            <label for="Field2" class="label">Email</label>
-            <input name="Field2" type="email" placeholder="Your email" id="email" data-formance_algorithm="complex" required class="input">
-          </div>
-          <div class="input-group">
-            <label for="Field4" class="label">Phone Number (optional)</label>
-            <input name="Field4" type="tel" placeholder="Your number" id="phone" class="input">
-          </div>
-          <div class="input-group">
-            <label for="Field5" class="label">Message</label>
-            <textarea name="Field5" placeholder="Your message" rows="8" id="message" required class="textarea"></textarea>
-          </div>
-          <input id="idstamp" name="idstamp" type="hidden" value="6OLdjfplL4nXWyxUTLm4vvv4Detdigw2ucOauRmbqtQ=">
-          <div class="center">
-            <button class="btn-primary icon-send">Send</button>
-          </div>
-        </form>
-        <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;" onload></iframe>
-        <div class="thanks center">
-          <h2 class="section-title">Thank you!</h2>
-          <p class="hero-text">We&rsquo;ll be in touch soon.</p>
-        </div>
-      </section>
-      <section class="guide-section contact-block center"><i class="icon-phone contact-block-icon"></i>
-        <h3 class="phone-number">800-963-8847</h3>
-      </section>
-      <section class="guide-section contact-block center"><i class="icon-contact contact-block-icon"></i>
-        <div class="address">
-          <h3>5278 Pinemont Dr. A240</h3>
-          <h3>Murray, UT 84123</h3>
-        </div>
-      </section>
-    </section>
+    <section class="guide-main container"></section>
     <footer>
       <div class="copyright"><a href="https://www.facebook.com/servicelineup" target="_blank" class="btn-social icon-facebook icon">Service Line Up Facebook</a><a href="https://twitter.com/ServiceLineUp" target="_blank" class="btn-social icon-twitter icon">Service Line Up Twitter</a><a href="https://plus.google.com/106114601891012251292" rel="publisher" target="_blank" class="btn-social icon-googleplus icon">Service Line Up Google Plus</a><a href="https://www.youtube.com/channel/UCUzq-6BDVAd_BJ_wxMjPB1w" class="btn-social icon-youtube icon">Service Line Up Youtube</a>
         <p>&copy; 2014 VGM Enterprises | <a class="link" href="/privacy/">Privacy Policy</a> | <a class="link" href="/terms/">Terms of Service</a></p>
@@ -101,16 +58,6 @@
       
       ga('create', 'UA-46212725-1', 'servicelineup.com');
       ga('send', 'pageview');
-    </script>
-    <script src="/js/jquery.formance.min.js"></script>
-    <script>
-      $(function() {
-        $("#phone").formance('format_phone_number');
-      });
-      function thanks() {
-        $("#form1").slideUp();
-        $(".thanks").show();
-      }
     </script>
   </body>
 </html>
