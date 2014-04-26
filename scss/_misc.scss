@@ -184,14 +184,14 @@
     background-color: $link-hover;
   }
 }
-.product-description {
+.flexed-box {
   @include flex;
   @include flex-direction;
 }
 @-moz-document url-prefix() { 
-  .product-description { display: inline-block; }
+  .flexed-box { display: inline-block; }
 }
-.product-tagline {
+.flexed-middle {
   @include flex-child(1 0 auto);
 }
 .video-grid {
