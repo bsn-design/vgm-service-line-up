@@ -21,7 +21,12 @@
   }
 }
 .price-term {
+  font-family: $headline-font;
   display: block;
   margin-top: -.5em;
   font-size: .5em;
+}
+.price-term-small {
+  @extend .price-term;
+  font-size: .4em;
 }

@@ -8,6 +8,22 @@ html(lang='en')
   body.page
     include _header
     section.guide-main.container
-      section.guide-section
+      section.guide-section.hero
+        .hero-image
+          img(src="/img/credit-card-processing.jpg", alt="Credit Card Processing")
+          .image.card
         h1.hero-title Credit Card Processing
+        p.hero-text If you have signed up with our preferred merchant you can even process your credit cards directly through Service Line Up, which makes your job easier by saving you a lot of time.
+      section.guide-section
+        h2.tagline-title Features
+      section.guide-section.two-up
+        .section-main
+          p Processing credit cards is a snap using Service Line Up. We take the time and effort of having to duplicate data in a separate system. Process all of your customers credit cards quickly and easily using Service Line Up.
+      section.guide-section.two-up
+        .section-main
+          p To process credit cards, go to the Payments section of Service Line Up. The Quick Dates and filter options give you many different ways to view your data. You will never miss getting paid using this page. To get paid and to send your customer a receipt or invoice, just click on the payment type and submit the payment or invoice. Service Line Up will automatically send your customers an email with the transaction you perform.
+      section.guide-section.single-video
+        .video-wrapper
+          .video-container
+            iframe(src="//www.youtube.com/embed/QlzrcwCb-a0?color=white&rel=0&autoplay=0",frameborder="0",allowfullscreen)        
     include _footer

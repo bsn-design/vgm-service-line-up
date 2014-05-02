@@ -1,8 +1,12 @@
 .hero {
   min-height: 17.5em;
 }
-.hero-title, .hero-subtitle {
+.hero-subtitle {
   margin: 0 0 .5em;
+}
+.hero-title {
+  @extend .hero-subtitle;
+  font-size: 2.5em;
 }
 // .hero img {
 //   width: 50%;
@@ -37,15 +41,18 @@
     background: url($base-path + '/img/man-at-computer.jpg') no-repeat top center;
     background-size: cover;
     border-radius: $image-border-radius;
-    &.product {
-      background-image: url($base-path + '/img/man-on-phone.jpg');
-    }
-    &.cleaning {
-      background-image: url($base-path + '/img/woman-at-computer.jpg');
-    }
-    &.field {
-      background-image: url($base-path + '/img/man-at-window.jpg');
-    }
+    &.product { background-image: url($base-path + '/img/man-on-phone.jpg'); }
+    &.cleaning { background-image: url($base-path + '/img/woman-at-computer.jpg'); }
+    &.field { background-image: url($base-path + '/img/man-at-window.jpg'); }
+    &.scheduling {  background-image: url($base-path + '/img/scheduling-capability.jpg'); }
+    &.card { background-image: url($base-path + '/img/credit-card-processing.jpg'); }
+    &.customer {  background-image: url($base-path + '/img/customer-relationship-management.jpg'); }
+    &.electrical { background-image: url($base-path + '/img/electrical.jpg'); }
+    &.plumbing { background-image: url($base-path + '/img/plumbing.jpg'); }
+    &.hvac { background-image: url($base-path + '/img/hvac.jpg'); }
+    &.landscaping { background-image: url($base-path + '/img/landscaping.jpg'); }
+    &.pet-care { background-image: url($base-path + '/img/pet-care.jpg'); }
+    &.pool-service { background-image: url($base-path + '/img/pool-service.jpg'); }
   }
   @media screen and (min-width: $mq-text-med) {
     width: 40%;
