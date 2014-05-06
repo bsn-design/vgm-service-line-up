@@ -1,5 +1,5 @@
 .bullet {
-  margin-left: 20%; 
+  margin-left: 20%;
   &:before {
     position: absolute;
     left: -2.5em;
@@ -190,7 +190,7 @@
   @include flex;
   @include flex-direction;
 }
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .flexed-box { display: inline-block; }
 }
 .flexed-middle {
@@ -200,6 +200,39 @@
   @include flex;
   @include justify-content;//($justify: space-between);
   @include flex-wrap;
+}
+.video {
+  display: block;
+  position: relative;
+  @include transition-duration(.5s);
+  &:before {
+    content: '';
+    position: absolute;
+    width: 4em; height: 4em;
+    left: 50%; margin-left: -2em;
+    top: 50%; margin-top: -2em;
+    border-radius: 50%;
+    border: .3em solid $bg-dark;
+    background-color: $bg-light;
+    @include transition-duration(.5s);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%; margin-left: -.6em;
+    top: 50%; margin-top: -1em;
+    border-left: 1.75em solid $bg-dark;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+  }
+  &:hover {
+    &:before {
+      background-color: $bg-dark;
+    }
+    &:after {
+      border-left-color: $bg-light;
+    }
+  }
 }
 .video-wrapper {
   display: inline-block;
@@ -261,7 +294,7 @@
     border-left: 3em solid transparent;
     border-right: 3em solid transparent;
   }
-  @media screen and (min-width: $mq-text-small) {  
+  @media screen and (min-width: $mq-text-small) {
     padding: .5em 2em .5em .5em;
     // Arrow block
     &:before {

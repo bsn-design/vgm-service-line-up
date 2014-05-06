@@ -1,6 +1,7 @@
 // Images
 img {
   max-width: 100%;
+  border-radius: $image-border-radius;
 }
 .image-small {
   position: relative;
