@@ -330,3 +330,9 @@
     }
   }
 }
+h2 a {
+  font-family: $headline-font;
+  text-decoration: none;
+  color: $text-dark;
+  cursor: default;
+}

@@ -9,31 +9,39 @@ section.guide-section.split-large
     p.icon-checkmark.bullet Non Qual Fees: 3.5% + $0.30
     p.icon-checkmark.bullet Monthly Fee: $10
     p.icon-checkmark.bullet Minimum: $10 (Approx $350 in sales/month)
-section.guide-section.inner-point
-  h2.price-title Annual Plan
+section.guide-section.inner-point.flexed-box
+  h2.price-title
+    div(itemscope, itemtype="http://schema.org/Product")
+      a(itemprop="url",href="/products/#{pageURL}")
+        div(itemprop="name") Annual Plan
   .center
     .price Free
       p.price-term For 30 days
-      p.price-term-small Then $199/yr
-  p.price-stamp Save $29
-  p.bullet (Optional merchant account not included)
-  p.icon-checkmark.bullet No credit card required for 30 day trial
-  p.icon-checkmark.bullet No set up fee
-  p.icon-checkmark.bullet No contracts
-  p.icon-checkmark.bullet No cancellation fees
+      p.price-term-small Then <span itemprop="price">$199/yr</span>
+  .flexed-middle
+    p.price-stamp Save $29
+    p.bullet (Optional merchant account not included)
+    p.icon-checkmark.bullet No credit card required for 30 day trial
+    p.icon-checkmark.bullet No set up fee
+    p.icon-checkmark.bullet No contracts
+    p.icon-checkmark.bullet No cancellation fees
   .center
     a.btn-primary.icon-cart(href="/Purchase/MerchantAccount.aspx?AccountType=3") Demo Annual Plan
-section.guide-section.inner-point
-  h2.price-title Monthly Plan
+section.guide-section.inner-point.flexed-box
+  h2.price-title
+    div(itemscope, itemtype="http://schema.org/Product")
+      a(itemprop="url",href="/products/#{pageURL}")
+        div(itemprop="name") Monthly Plan
   .center
     .price Free
       p.price-term For 30 days
-      p.price-term-small Then $19/mo
-  p.bullet (Optional merchant account not included)
-  p.icon-checkmark.bullet No credit card required for 30 day trial
-  p.icon-checkmark.bullet No set up fee
-  p.icon-checkmark.bullet No contracts
-  p.icon-checkmark.bullet No cancellation fees
+      p.price-term-small Then <span itemprop="price">$19/mo</span>
+  .flexed-middle
+    p.bullet (Optional merchant account not included)
+    p.icon-checkmark.bullet No credit card required for 30 day trial
+    p.icon-checkmark.bullet No set up fee
+    p.icon-checkmark.bullet No contracts
+    p.icon-checkmark.bullet No cancellation fees
   .center
     a.btn-default.icon-cart(href="/Purchase/MerchantAccount.aspx?AccountType=2") Demo Monthly Plan
 section.guide-section.tagline-section
