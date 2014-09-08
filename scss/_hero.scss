@@ -41,7 +41,10 @@
     background-size: cover;
     border-radius: $image-border-radius;
     &.product { background-image: url($base-path + '/img/man-on-phone.jpg'); }
-    &.cleaning { background-image: url($base-path + '/img/woman-at-computer.jpg'); }
+    &.cleaning { 
+      background-image: url($base-path + '/img/woman-at-computer.jpg'); 
+      background-position-y: center;
+    }
     &.field { background-image: url($base-path + '/img/man-at-window.jpg'); }
     &.scheduling {  background-image: url($base-path + '/img/scheduling-capability.jpg'); }
     &.card { background-image: url($base-path + '/img/credit-card-processing.jpg'); }
