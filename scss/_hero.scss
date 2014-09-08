@@ -18,8 +18,7 @@
 .hero-image {
   @extend .center;
   position: relative;
-  width: 50%;
-  max-width: 15em;
+  width: 100%;
   overflow: hidden;
   float: left;
   margin: 0 1em .5em 0;
@@ -27,7 +26,7 @@
   &:before {
     content: '';
     display: block;
-    padding-top: 100%;
+    padding-top: 50%;
   }
   img {
     position: absolute;
@@ -53,6 +52,12 @@
     &.landscaping { background-image: url($base-path + '/img/landscaping.jpg'); }
     &.pet-care { background-image: url($base-path + '/img/pet-care.jpg'); }
     &.pool-service { background-image: url($base-path + '/img/pool-service.jpg'); }
+  }
+  @media screen and (min-width: $mq-text-small) {
+    max-width: 15em;
+    &:before {
+      padding-top: 100%;
+    }
   }
   @media screen and (min-width: $mq-text-med) {
     width: 40%;

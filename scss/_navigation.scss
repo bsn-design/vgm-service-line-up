@@ -8,10 +8,18 @@ nav {
 nav > ul {
   list-style-type: none;
   margin: 0; padding: 0;
+  display: inline-block;
+  max-width: 75%;
   & > li { 
-    display: inline-block;
+    display: none;
     margin: 0; padding: 0;
+    &.menu { display: inline-block; }
+    @media screen and (min-width: $mq-nav-large) {
+      display: inline-block;
+      &.menu { display: none; }
+    }
   }
+  &.expanded > li { display: inline-block; }
 }
 .nav-link {
   display: inline-block;
@@ -61,7 +69,6 @@ nav > ul {
   // }
   @media screen and (min-width: $mq-nav-large) {
     padding: .5em 1em;
-    &.menu { display: none; }
     width: auto;
     text-indent: 0;
     &:before { 
