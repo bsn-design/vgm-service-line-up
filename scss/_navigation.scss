@@ -77,3 +77,19 @@ nav > ul {
     }
   }
 }
+.dropdown {
+  & > .nav-link {
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 0; height: 0;
+      border-top: .5em solid $text-dark;
+      border-left: .35em solid transparent;
+      border-right: .35em solid transparent;
+      margin-left: .25em;
+    }
+    &:hover:after, &.active:after, &.current:after { 
+      border-top-color: $text-light;
+    }
+  }
+}
