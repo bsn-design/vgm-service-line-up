@@ -1,2 +1,3 @@
 User-agent: *
+Sitemap: http://servicelineup.com/sitemap.xml
 Disallow:

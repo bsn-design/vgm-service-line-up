@@ -93,3 +93,38 @@ nav > ul {
     }
   }
 }
+.navul_ul {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  z-index: 100;
+  text-align: left;
+  padding: .75em 0;
+  margin-left: .25em;
+  background-color: $nav-color;
+  @include background-image($nav-gradient);
+  color: $nav-text;
+  box-shadow: $nav-shadow;
+  border: $nav-border;
+  border-radius: $nav-border-radius;
+  li {
+    display: block;
+    padding: .25em 1em;
+    cursor: pointer;
+    a {
+      font-family: $headline-font;
+      text-decoration: none;
+      color: $text-dark;
+    }
+    &:hover {
+      background-color: $nav-hover;
+      @include background-image($nav-gradient-hover);
+      a {
+        color: $nav-text-hover;
+      }
+    }
+  }
+}
+.dropdown:hover > .navul_ul {
+  display: block;
+}

@@ -4,46 +4,139 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 <url>
-  <loc>http://www.servicelineup.com/</loc>
-  <lastmod>2014-02-07T22:39:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/products/</loc>
-  <lastmod>2014-02-07T22:39:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/faq/</loc>
-  <lastmod>2014-02-07T22:40:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/cleaning-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/contact/</loc>
-  <lastmod>2014-02-07T22:40:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/electrical-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/privacy/</loc>
-  <lastmod>2014-02-07T22:39:53+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/plumbing-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/terms/</loc>
-  <lastmod>2014-02-07T22:40:07+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/landscaping-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/products/field-service-software/</loc>
-  <lastmod>2014-02-07T23:19:16+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/pet-care-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.servicelineup.com/products/cleaning-software/</loc>
-  <lastmod>2014-02-07T23:19:19+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://servicelineup.com/products/hvac-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/products/pool-service-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/products/field-service-software/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/features/customer-management/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/faq/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/contact/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/features/credit-card-processing/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/features/scheduling-capability/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/privacy/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/terms/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/Purchase/MerchantAccount.aspx?AccountType=1</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/Purchase/MerchantAccount.aspx?AccountType=0</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/Purchase/MerchantAccount.aspx?AccountType=3</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/Purchase/MerchantAccount.aspx?AccountType=2</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/want-a-more-efficient-company-make-your-software-accessible-on-mobile-devices/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/category/blog/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/author/ron/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/how-automated-scheduling-enhances-your-business/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://servicelineup.com/press/how-our-scheduling-program-helps-scale-businesses/</loc>
+  <lastmod>2014-09-04T09:49:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 </urlset>
