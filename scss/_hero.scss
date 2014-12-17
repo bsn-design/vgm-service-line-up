@@ -73,3 +73,11 @@
 .hero-text {
   max-width: none;
 }
+.hero-video {
+  float: left;
+  margin-right: 1em;
+  @media screen and (min-width: $mq-nav-large) {
+    width: 50%;
+    width: calc(50% - .625em);
+  }
+}
